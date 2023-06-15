@@ -2,7 +2,7 @@ package coreJava2;
 
 import java.util.Scanner;
 
-public class IcecreamShop {
+public class IcecreamShopAdvanced {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -44,7 +44,7 @@ public class IcecreamShop {
 		ans=sc.next();
 		System.out.println("Enter your name");
 		ans=sc.next();
-		System.out.println("Hello"+ans+"place your order");
+		System.out.println("Hello"+" "+ans+" "+"place your order");
 		do {
 		System.out.println("Enter your choice");
 		System.out.println("Menu");
@@ -53,7 +53,7 @@ public class IcecreamShop {
 		switch(choice) {
 		case 1:
 			System.out.println("Varities available");
-			System.out.println("1. Vanilla\n" + "2.Chocolate\n" +"3.Butterscotch\n"+ "Enter selection: ");
+			System.out.println("1. Vanilla\t"+"3\n"+ "2.Chocolate\t"+"2\n"+"3.Butterscotch\t"+"1.5\n"+ "Enter selection: ");
 			choice=sc.nextInt();
 			switch(choice) {
 			case 1:
@@ -92,7 +92,7 @@ public class IcecreamShop {
 			break;
 		case 2:
 			System.out.println("Varities available");
-			System.out.println("1. Mango\n" + "2.DBC\n"+ "3.Mint\n ");
+			System.out.println("1. Mango\t"+"3"+ "2.DBC\t"+"2\n"+ "3.Mint\t"+"3\n");
 			choice=sc.nextInt();
 			switch(choice) {
 			case 1: 
@@ -131,9 +131,10 @@ public class IcecreamShop {
 		}System.out.println("Do you want to continue");
 		ans=sc.next();
 		}while(ans.equals("y"));
-		System.out.println("Bill");
+		System.out.println("------------Your Bill-----------------");
 		int sr=0;
 		System.out.println("Sl No."+"\t"+" "+ "Flavour" +"\t"+" "+"\t"+"Price"+"\t"+" "+"Quantity"+"\t"+" "+"Amount");
+		System.out.println("-----------------------------------------");
 		
 			if(vanillaFlag) {
 				sr=sr+1;
